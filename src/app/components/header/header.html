@@ -1,1 +1,24 @@
-<h1>en espera hasta que tenga tiempo</h1>
+<header class="header">
+  <div class="header-container">
+    
+    <a routerLink="/" class="logo">
+      <div class="logo-icon"><img src="assets/favicon-32x32.png" alt="Logo"></div>
+      <h1 class="logo-text">Enrique Hernández<span><b>~</b></span></h1>
+    </a>
+    
+    <!-- Navegación -->
+    <nav class="nav">
+      @for (item of navItems; track item.path) {
+        <a 
+          routerLink="item.path" 
+          routerLinkActive="active"
+          routerLinkActiveOptions="{ exact: true }"
+          class="nav-link"
+        >
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+    
+  </div>
+</header>

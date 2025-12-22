@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header {
-
+ navItems = [
+    { path: '/', label: 'inicio' },
+    { path: '/proyectos', label: 'proyectos' },
+    { path: '/contacto', label: 'contacto' }
+  ];
 }
