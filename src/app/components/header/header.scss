@@ -101,7 +101,7 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
     position: relative;
     transition: all 0.3s ease;
     
@@ -113,7 +113,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #3b82f6, green);
+      background: linear-gradient(90deg, #3b82f6, rgb(95, 252, 161));
       transition: width 0.3s ease;
     }
     
