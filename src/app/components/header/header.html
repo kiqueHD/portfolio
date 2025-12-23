@@ -6,13 +6,12 @@
       <h1 class="logo-text">Enrique Hernández<span><b> .</b></span></h1>
     </a>
     
-    <!-- Navegación -->
     <nav class="nav">
       @for (item of navItems; track item.path) {
         <a 
-          routerLink="item.path" 
+          [routerLink]="item.path" 
           routerLinkActive="active"
-          routerLinkActiveOptions="{ exact: true }"
+          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
           class="nav-link"
         >
           {{ item.label }}
