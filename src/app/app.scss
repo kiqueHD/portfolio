@@ -17,6 +17,25 @@
   color: hsla(var(--foreground), 1);
 }
 
+// CONTENEDOR que aplica el 40% al contenido principal
+.content-container {
+  width: 40%;
+  margin: 0 auto;
+  
+  // Responsive
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+  
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
 .main-content {
   flex: 1;
   padding: 2rem 0;
