@@ -1,0 +1,166 @@
+@import '../../../variables';
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-image {
+  position: relative;
+  width: calc(100% - 2rem);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  
+  @media (max-width: 768px) {
+    margin: 0.75rem;
+    width: calc(100% - 1.5rem);
+  }
+  
+  @media (max-width: 480px) {
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .view-text {
+    color: var(--accent-blue-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+// Contenido de la tarjeta
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+  
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
+}
+
+// Badges de tecnologías
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
+  @media (max-width: 480px) {
+    gap: 0.35rem;
+  }
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.22rem 0.7rem;
+  background-color: rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 999px;
+  color: var(--accent-blue-light);
+  font-size: 0.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  @media (max-width: 480px) {
+    padding: 0.18rem 0.55rem;
+    font-size: 0.55rem;
+  }
+}
+
+// Links del proyecto
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  @media (max-width: 480px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+  
+  // Variante primaria (para el link de ver proyecto)
+  &-primary {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: var(--bg-primary);
+  }
+}

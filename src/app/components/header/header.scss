@@ -1,26 +1,20 @@
-@import '../../../_variables.scss';
-@import '../../../_mixins.scss';
+@import '../../../variables';
 
-// Header portfolio - tema oscuro
 .header {
   position: sticky;
   top: 0;
   z-index: 100;
   height: 70px;
-  width: 100%;
-  
-  // Fondo oscuro glassmorphism
-  background-color: rgba(10, 10, 20, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
   transition: border-color 0.3s ease;
   
-  &:hover {
-    border-bottom-color: rgba(59, 130, 246, 0.5);
+  @media (max-width: 768px) {
+    height: auto;
   }
 }
 
-// Contenedor que limita el ancho al 40% (IGUAL que en app.component)
 .header-container {
   width: 40%;
   margin: 0 auto;
@@ -29,30 +23,16 @@
   align-items: center;
   justify-content: space-between;
   
-  // Versión móvil - logo arriba del nav
-  @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    min-height: 120px;
-    padding: 1rem 0;
-    
-    .logo {
-      margin-bottom: 0 rem;
-    }
-    
-    .nav {
-      margin-top: 0.5rem;
-    }
-  }
-  
-  // Responsive widths (IGUAL que en app.component)
-  @media (max-width: 1024px) {
+  @media (max-width: 1345px) {
     width: 70%;
   }
   
   @media (max-width: 768px) {
     width: 85%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
   }
   
   @media (max-width: 480px) {
@@ -60,42 +40,30 @@
   }
 }
 
-// Logo/Nombre
 .logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  transition: all 0.3s ease;
   
   &-icon {
     width: 32px;
     height: 32px;
-    border-radius: 8px;
-    overflow: hidden;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+    border-radius: var(--radius);
+    transition: transform 0.3s ease;
   }
   
   &-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: white;
+    color: var(--text-primary);
     letter-spacing: -0.5px;
-    margin: 0;
     
     span {
-      color: #60a5fa;
-      
-      b {
-        color: #93c5fd;
-      }
+      color: var(--accent-blue);
     }
     
-    // Responsive
     @media (max-width: 640px) {
       font-size: 1.25rem;
     }
@@ -104,17 +72,14 @@
   &:hover {
     .logo-icon {
       transform: rotate(10deg) scale(1.15);
-      transition: transform 0.3s ease;
     }
     
     .logo-text {
-      color: #93c5fd;
-      transition: color 0.3s ease;
+      color: var(--accent-blue-light);
     }
   }
 }
 
-// Navegación principal
 .nav {
   display: flex;
   gap: 2rem;
@@ -124,13 +89,13 @@
   }
   
   &-link {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     padding: 0.2rem 0;
     position: relative;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     
     &::after {
       content: '';
@@ -139,12 +104,12 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #3b82f6, rgb(95, 252, 161));
+      background: var(--accent-gradient);
       transition: width 0.3s ease;
     }
     
     &:hover {
-      color: white;
+      color: var(--text-primary);
       
       &::after {
         width: 100%;
@@ -152,11 +117,11 @@
     }
     
     &.active {
-      color: white;
+      color: var(--text-primary);
       
       &::after {
         width: 100%;
-        background: #60a5fa;
+        background: var(--accent-blue);
       }
     }
   }

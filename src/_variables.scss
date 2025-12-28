@@ -1,28 +1,20 @@
-// Variables CSS para temas
 :root {
-  // Tema claro
-  --background: 0 0% 100%;
-  --foreground: 224 71.4% 4.1%;
-  --primary: 220.9 39.3% 11%;
-  --primary-foreground: 210 20% 98%;
-  --border: 220 13% 91%;
-  --accent: 220 14.3% 95.9%;
-  --accent-foreground: 220.9 39.3% 11%;
-  --radius: 0.5rem;
-}
-
-// Tema oscuro
-.dark {
-  --background: 224 71.4% 4.1%;
-  --foreground: 210 20% 98%;
-  --primary: 210 20% 98%;
-  --primary-foreground: 220.9 39.3% 11%;
-  --border: 215 27.9% 16.9%;
-  --accent: 215 27.9% 16.9%;
-  --accent-foreground: 210 20% 98%;
-}
-
-// Funciones helper
-@function hsl-css($hsl-values) {
-  @return hsl(#{$hsl-values});
+  --bg-primary: #0a0a14;
+  --bg-glass: rgba(10, 10, 20, 0.85);
+  
+  --text-primary: #f1f5f9;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  
+  --accent-blue: #60a5fa;
+  --accent-blue-light: #93c5fd;
+  --accent-gradient: linear-gradient(90deg, #3b82f6, #5ffca1);
+  
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(59, 130, 246, 0.5);
+  
+  --spacing-section: 3rem;
+  --spacing-section-mobile: 2rem;
+  
+  --radius: 8px;
+  --blur: 10px;
 }

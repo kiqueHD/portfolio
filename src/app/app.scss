@@ -1,5 +1,4 @@
-@import '../_variables.scss';
-@import '../_mixins.scss';
+@import '../variables.scss';
 
 :host {
   display: block;
@@ -10,20 +9,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
-  @include antialiased;
-  font-family: 'Inter', sans-serif;
-  background-color: hsla(var(--background), 1);
-  color: hsla(var(--foreground), 1);
 }
 
-// CONTENEDOR que aplica el 40% al contenido principal
 .content-container {
   width: 40%;
   margin: 0 auto;
   
-  // Responsive
-  @media (max-width: 1024px) {
+  @media (max-width: 1345px) {
     width: 70%;
   }
   
@@ -32,15 +24,14 @@
   }
   
   @media (max-width: 480px) {
-    width: 90%;
+    width: 85%;
   }
 }
 
 .main-content {
-  flex: 1;
-  padding: 2rem 0;
+  padding: var(--spacing-section) 0;
   
-  @include for-tablet-up {
-    padding: 3rem 0;
+  @media (max-width: 768px) {
+    padding: var(--spacing-section-mobile) 0;
   }
 }

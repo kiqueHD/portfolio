@@ -1,1 +1,27 @@
-<div>la home</div>
+<!-- Versión recomendada con botón "view more" -->
+<section class="projects-section">
+  
+  <div class="section-header">
+    <h2 class="section-title">proyectos</h2>
+    <a routerLink="/projects" class="view-more-link">
+      ver más
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+  
+  <div class="projects-grid">
+    @for (project of featuredProjects; track project.title) {
+      <app-project
+        [imageUrl]="project.imageUrl"
+        [title]="project.title"
+        [description]="project.description"
+        [technologies]="project.technologies"
+        [githubUrl]="project.githubUrl"
+        [liveUrl]="project.liveUrl"
+      />
+    }
+  </div>
+  
+</section>
