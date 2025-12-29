@@ -68,16 +68,7 @@
       font-size: 1.25rem;
     }
   }
-  
-  &:hover {
-    .logo-icon {
-      transform: rotate(10deg) scale(1.15);
-    }
-    
-    .logo-text {
-      color: var(--accent-blue-light);
-    }
-  }
+
 }
 
 .nav {

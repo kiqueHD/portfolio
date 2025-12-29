@@ -57,14 +57,6 @@
   svg {
     transition: transform 0.3s ease;
   }
-  
-  &:hover {
-    color: var(--accent-blue-light);
-    
-    svg {
-      transform: translateX(4px);
-    }
-  }
 }
 
 .projects-grid {
