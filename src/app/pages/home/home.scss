@@ -14,6 +14,8 @@
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
+  line-height: 1.2;
+  text-wrap: balance;
   
   @media (max-width: 640px) {
     font-size: 3rem;
@@ -56,34 +58,22 @@
 .about-text {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  max-width: 100%;
   flex: 1;
-  
-  @media (min-width: 640px) {
-    max-width: 100%;
-  }
-  
-  p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin: 0;
-    font-size: 0.95rem;
-    
-    @media (max-width: 480px) {
-      font-size: 0.9rem;
-    }
-  }
+  gap: 1rem;
 }
 
 .about-text p {
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.75;
   margin: 0;
   font-size: 0.95rem;
-  text-wrap: balance;
+  text-wrap: pretty;
+  max-width: 90ch;
   
   @media (max-width: 480px) {
     font-size: 0.9rem;
+    line-height: 1.65;
   }
 }
 
