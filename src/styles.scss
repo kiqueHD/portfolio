@@ -1,42 +1,5 @@
-@use 'variables' as *;
+@use 'styles/variables' as *;
+@use 'styles/reset';
+@use 'styles/typography';
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-// "__Calistoga_a437ee","__Calistoga_Fallback_a437ee"
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// anchors, except nav links and logo
-a:not(.nav-link):not(.logo) {
-  color: var(--accent-blue);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  
-  &:hover {
-    color: var(--accent-blue-light);
-  }
-}
-
-// img responsive
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
