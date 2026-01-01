@@ -9,8 +9,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Header {
  navItems = [
-    { path: '/', label: 'home' },
-    { path: '/projects', label: 'proyectos' },
+    { path: '/', label: 'inicio' },
+    // { path: '/projects', label: 'proyectos' },
     { path: '/contact', label: 'contacto' }
   ];
 }

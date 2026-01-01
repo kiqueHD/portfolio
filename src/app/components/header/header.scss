@@ -60,10 +60,6 @@
     color: var(--text-primary);
     letter-spacing: -0.5px;
     
-    span {
-      color: var(--accent-blue);
-    }
-    
     @media (max-width: 640px) {
       font-size: 1.25rem;
     }
