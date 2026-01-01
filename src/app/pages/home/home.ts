@@ -18,11 +18,11 @@ export class Home {
       githubUrl: 'https://github.com/kiqueHD/projecteTraficTrackin',
     },
     {
-      imageUrl: 'assets/projects/dashboard.jpg',
-      title: 'Speaky balblala',
-      description: 'Dashboard interactivo para visualización de datos en tiempo real con gráficos y métricas personalizables.',
+      imageUrl: '',
+      title: 'Speakly',
+      description: 'Ecommerce de venta de cursos de idiomas con funcionalidades de gestión de usuarios, productos y pedidos.',
       technologies: ['SpringBoot', 'Java', 'Docker', 'MariaDB','Angular', 'TypeScript', 'Material', 'SASS'],
-      githubUrl: 'https://github.com/tuusuario/dashboard'
+      githubUrl: ''
     }
   ];
 }
