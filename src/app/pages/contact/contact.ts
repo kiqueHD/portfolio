@@ -18,13 +18,6 @@ export class Contact {
 
   private initForm(): void {
     this.contactForm = this.fb.group({
-      email: [
-        '',
-        [
-          Validators.required,
-          Validators.email,
-        ],
-      ],
       asunto: [
         '',
         [
@@ -47,11 +40,10 @@ export class Contact {
       return;
     }
 
-    const email = this.contactForm.get('email')?.value;
     const subject = this.contactForm.get('asunto')?.value;
     const message = this.contactForm.get('mensaje')?.value;
 
-    const mailtoLink = `mailto:${this.recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`De: ${email}\n\n${message}`)}`;
+    const mailtoLink = `mailto:${this.recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
 
     // Reset form after opening mailto

@@ -3,7 +3,7 @@
 
     <p class="intro-text">
         Si quieres ponerte en contacto conmigo, puedes hacerlo a través de este formulario.
-        Que te llevará a tu app de correo predeterminada para enviarme un email.
+        Que te llevará a tu correo predeterminado para escribir a enriquehernbay@gmail.com.
     </p>
     <p class="intro-text">
         También puedes darle al link de abajo.
@@ -11,16 +11,6 @@
     <p class="intro-text">En cuanto pueda te responderé. Gracias!</p>
 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
-        <!-- Email Field -->
-        <div class="form-group">
-            <label for="email" class="label">Email*</label>
-            <input id="email" type="email" formControlName="email" class="input" placeholder="Tu email"
-                [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" />
-            @if (contactForm.get('email')?.touched && contactForm.get('email')?.invalid) {
-            <p class="error-message">{{ getFieldError('email') }}</p>
-            }
-        </div>
-
         <!-- Asunto Field -->
         <div class="form-group">
             <label for="asunto" class="label">Asunto*</label>
@@ -42,7 +32,7 @@
         </div>
 
         <!-- Submit Messages -->
-        @if (contactForm.get('email')?.touched && contactForm.valid) {
+        @if (contactForm.valid) {
         <div class="message success-message">
             ✓ Formulario listo para enviar
         </div>
