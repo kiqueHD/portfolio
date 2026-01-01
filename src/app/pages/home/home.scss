@@ -27,9 +27,13 @@
 .about-text {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 55%;
   flex: 1;
   gap: 1rem;
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+  }
 }
 
 .about-text p {
