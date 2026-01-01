@@ -29,9 +29,9 @@
 }
 
 .main-content {
-  padding: var(--spacing-section) 0;
+  padding: var(--spacing-section) 0 0;
   
   @media (max-width: 768px) {
-    padding: var(--spacing-section-mobile) 0;
+    padding: var(--spacing-section-mobile) 0 0;
   }
 }

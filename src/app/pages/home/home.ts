@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Project } from "../../components/project/project";
 import { RouterLink } from '@angular/router';
+import { Project } from '../../components/project/project';
 
 @Component({
   selector: 'app-home',
