@@ -8,4 +8,6 @@ import { Socials } from '../socials/socials';
   templateUrl: './footer.html',
   styleUrl: './footer.scss'
 })
-export class Footer {}
+export class Footer {
+  currentYear: number = new Date().getFullYear();
+}
