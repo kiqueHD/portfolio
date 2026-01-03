@@ -22,7 +22,7 @@ export class Home {
       title: 'Speakly',
       description: 'Ecommerce de venta de cursos de idiomas con funcionalidades de gestión de usuarios, productos y pedidos.',
       technologies: ['SpringBoot', 'Java', 'Docker', 'MariaDB','Angular', 'TypeScript', 'Material', 'SASS'],
-      githubUrl: ''
+      githubUrl: 'https://github.com/orgs/speakly-project/repositories'
     }
   ];
 }
