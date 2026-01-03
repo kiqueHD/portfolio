@@ -11,14 +11,14 @@ import { Project } from '../../components/project/project';
 export class Home {
   featuredProjects: any[] = [
     {
-      imageUrl: 'https://raw.githubusercontent.com/kiqueHD/projecteTraficTrackin/refs/heads/main/caputratraffictrackingapp.png',
+      imageUrl: 'assets/projects/traffictrackin.png',
       title: 'Traffic Tracking',
       description: 'Plataforma para visualizar el estado del tráfico de Valencia en tiempo real con mapas interactivos.',
       technologies: ['SpringBoot', 'Java', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
       githubUrl: 'https://github.com/kiqueHD/projecteTraficTrackin',
     },
     {
-      imageUrl: '',
+      imageUrl: 'assets/projects/cursoimg.png',
       title: 'Speakly',
       description: 'Ecommerce de venta de cursos de idiomas con funcionalidades de gestión de usuarios, productos y pedidos.',
       technologies: ['SpringBoot', 'Java', 'Docker', 'MariaDB','Angular', 'TypeScript', 'Material', 'SASS'],
