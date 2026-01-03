@@ -1,19 +1,44 @@
 <section class="about-section">
-  
+
   <div class="about-content">
     <div class="about-image">
       <img src="assets/fotos/fotorio.jpg">
     </div>
     <div class="about-text">
-        <h2 class="page-title">hola! 👋</h2>
+      <h2 class="page-title">hola! ✌️</h2>
 
       <p>
         Como ya habrás notado, me llamo <b>Enrique</b>,
-        tengo <b>19 años</b> y soy un <b>desarrollador</b> de <b>Valencia</b>.
+        y soy un <b>desarrollador</b> de <b>Valencia</b>.
       </p>
-            <p>Aquí podrás ver algunos de mis proyectos, tanto de clase como personales relacionados con la programación.</p>
+      <p>Aquí puedes ver algunos de mis proyectos, tanto de clase como personales y lo que hago relacionado con la
+        programación.</p>
     </div>
   </div>
+
+</section>
+
+<section class="sobre-mi-section">
+  <h2 class="section-title">sobre mí
+  </h2>
+  <div class="sobre-mi-text">
+    <p>
+      Estoy terminando DAW, y actualmente estoy buscando oportunidades profesionales.
+      Utilizo tecnologías como <b>Java</b>, <b>SpringBoot</b>, <b>Docker</b>, <b>TypeScript</b>, <b>Angular</b> (como en esta web), entre otras, y
+      siempre estoy abierto a aprender algo nuevo.
+    </p>
+    <br>
+    <p>En mi experiencia en las diferentes áreas de desarrollo, me llaman la atención el desarrollo backend, la
+      arquitectura de software y el despliegue de aplicaciones.
+    </p>
+  </div>
+  <!-- <p>
+    I'm passionate about everything related to technology, from designing a prototype to planning an architecture for a
+    specific software.
+    I love collaborating on projects, but I also like to start my own ideas. What I like most about programming is that
+    it gives you the
+    power to create whatever you want, from anywhere in the world.
+  </p> -->
 
 </section>
 
@@ -27,17 +52,11 @@
       </svg>
     </a> -->
   </div>
-  
+
   <div class="projects-grid">
     @for (project of featuredProjects; track project.title) {
-      <app-project
-        [imageUrl]="project.imageUrl"
-        [title]="project.title"
-        [description]="project.description"
-        [technologies]="project.technologies"
-        [githubUrl]="project.githubUrl"
-        [liveUrl]="project.liveUrl"
-      />
+    <app-project [imageUrl]="project.imageUrl" [title]="project.title" [description]="project.description"
+      [technologies]="project.technologies" [githubUrl]="project.githubUrl" [liveUrl]="project.liveUrl" />
     }
-  </div>  
+  </div>
 </section>
