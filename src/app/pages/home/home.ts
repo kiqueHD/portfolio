@@ -20,8 +20,8 @@ export class Home {
     {
       imageUrl: 'assets/projects/cursoimg.png',
       title: 'Speakly',
-      description: 'Ecommerce de publicación y venta de cursos de idiomas con gestión de usuarios, productos y pedidos.',
-      technologies: ['SpringBoot', 'Java', 'Docker', 'MariaDB','Angular', 'TypeScript', 'Ng Material', 'SASS'],
+      description: 'Ecommerce de publicación y venta de cursos de idiomas con gestión de usuarios, cursos y sesiones.',
+      technologies: ['SpringBoot', 'Java', 'Docker', 'MariaDB','Angular', 'TypeScript', 'SASS'],
       githubUrl: 'https://github.com/orgs/speakly-project/repositories'
     }
   ];
