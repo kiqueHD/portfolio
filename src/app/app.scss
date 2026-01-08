@@ -12,9 +12,11 @@
 }
 
 .content-container {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
-  
+    @media (max-width: 1662px) {
+    width: 60%;
+  }
   @media (max-width: 1345px) {
     width: 75%;
   }

@@ -16,13 +16,17 @@
 }
 
 .header-container {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   
+  @media (max-width: 1662px) {
+    width: 60%;
+  }
+
   @media (max-width: 1345px) {
     width: 75%;
   }
@@ -36,7 +40,7 @@
   }
   
   @media (max-width: 480px) {
-    width: 90%;
+    width: 85%;
   }
 }
 
