@@ -13,7 +13,7 @@ export class Home {
     {
       imageUrl: 'assets/projects/traffictrackin.png',
       title: 'Traffic Tracking',
-      description: 'Plataforma para visualizar el estado del tráfico de Valencia en tiempo real con mapas interactivos.',
+      description: 'Plataforma para visualizar el estado del tráfico de Valencia en tiempo real con mapas interactivos, usando las APIs del ayuntamiento.',
       technologies: ['SpringBoot', 'Java', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
       githubUrl: 'https://github.com/kiqueHD/projecteTraficTrackin',
     },
